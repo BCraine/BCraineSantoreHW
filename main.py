@@ -28,69 +28,69 @@ def main():
         items = input("Please enter items you would like to buy from above\n"
                       "Enter item twice if you have two of same thing and so forth\n"
                       "Enter 'done' when finished ")
-        if items == "Cereal":
+        if items.lower() == "cereal":
             price += wic_prices[0]
             print("$", price)
-        if items == "Vegetables":
+        if items.lower() == "vegetables":
             price += wic_prices[1]
             print("$", price)
-        if items == "Juice":
+        if items.lower() == "juice":
             price += wic_prices[2]
             print("$", price)
-        if items == "Milk":
+        if items.lower() == "milk":
             price += wic_prices[3]
             print("$", price)
-        if items == "Cheese":
+        if items.lower() == "cheese":
             price += wic_prices[4]
             print("$", price)
-        if items == "Meat":
+        if items.lower() == "meat":
             price += wic_prices[5]
             print("$", price)
-        if items == "Fruit":
+        if items.lower() == "fruit":
             price += wic_prices[6]
             print("$", price)
-        if items == "Bread":
+        if items.lower() == "bread":
             price += wic_prices[7]
             print("$", price)
-        if items == "Water":
+        if items.lower() == "water":
             price += wic_prices[8]
             print("$", price)
-        if items == "Soda":
+        if items.lower() == "soda":
             price += wic_prices[9]
             print("$", price)
-        if items == "Shirt":
+        if items.lower() == "shirt":
             price += clothing_prices[0]
             print("$", price)
-        if items == "Pants":
+        if items.lower() == "pants":
             price += clothing_prices[1]
             print("$", price)
-        if items == "Shoes":
+        if items.lower() == "shoes":
             price += clothing_prices[2]
             print("$", price)
-        if items == "Toothbrush":
+        if items.lower() == "toothbrush":
             price += e_e_prices[0]
             print("$", price)
-        if items == "Toothpaste":
+        if items.lower() == "toothpaste":
             price += e_e_prices[1]
             print("$", price)
-        if items == "Deodorant":
+        if items.lower() == "deodorant":
             price += e_e_prices[2]
             print("$", price)
-        if items == "Shampoo":
+        if items.lower() == "shampoo":
             price += e_e_prices[3]
             print("$", price)
-        if items == "Conditioner":
+        if items.lower() == "conditioner":
             price += e_e_prices[4]
             print("$", price)
 
     print("Total cost before tax ", "$", price)
-    if state == "Massachusetts":
+    if state.lower() == "massachusetts":
         total = price + (price * state_tax_massachusetts)
         print("Total cost after tax ", "$", total)
-    if state == "New Hampshire":
+    if state.lower() == "new hampshire":
         total = price + (price * state_tax_new_hampshire)
         print("Total cost after tax ", "$", total)
-    if state == "Maine":
+    if state.lower() == "maine":
         total = price + (price * state_tax_maine)
         print("Total cost after tax ", "$", total)
     return total
